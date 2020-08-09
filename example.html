@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset=utf-8>
+        <title>for文</title>
+    </head>
+    <script>
+        function triangle(){
+            var count = document.getElementById("number").value;
+            var answer = "";
+            for (var i = 0; i < count; i++) {
+                for (var j = 0; j < count; j++) {
+                    answer = answer + "○";
+                }
+                answer = answer + "<br>";
+            }
+            document.getElementById("answer").innerHTML = answer;
+        }
+    </script>
+    <body>
+        二重ループ
+        <br>
+        数字を入力してください。
+        <br>
+        <input type="text" id="number">
+        <button onclick = triangle();>
+            実行！
+        </button>
+        <hr>
+        <div id = "answer"></div>
+    </body>
+</html>
